@@ -9,34 +9,99 @@
 </head>
 
 <body>
-    <div class="flex justify-center items-center h-screen">
-        <main class="w-[768px]">
-            <header class="flex gap-4 justify-between p-4">
-                <div
-                    class="text-xl font-bold bg-gradient-to-r from-indigo-300 to-rose-200 bg-clip-text text-transparent">
-                    Steady.</div>
-                <nav class="flex gap-4">
-                    <div class="link">Instagram.</div>
-                    <div class="link">Github.</div>
-                    <div class="link">Twitter.</div>
-                    <div class="link">LinkedIn.</div>
-                </nav>
-            </header>
+    <main class="container mx-auto px-4">
 
-            <section class="grid grid-cols-3 gap-4">
-                <div class="card space-y-4 col-span-2">
-                    <h2>Hello i am, <span id="greeting"></span></h2>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmzWIJILSL65YAfdWwVSUa5fVybzhrj_dTyg&s"
-                        class="w-16 h-16 rounded-lg" />
+        <!-- header -->
+        <header class="flex flex-col md:flex-row justify-between items-center py-4">
+            <div class="text-2xl font-bold">Steady</div>
+            <!-- navbar -->
+            <nav class="flex gap-4 mt-2 md:mt-0">
+                <div class="link"><a href="#profile">Profile</a></div>
+                <div class="link"><a href="#about">About</a></div>
+                <div class="link"><a href="#contact">Contact</a></div>
+            </nav>
+        </header>
+
+        <!-- content -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+            <div class="card text-4xl md:text-5xl xl:text-7xl col-span-1 md:col-span-2 p-4">
+                <span id="greeting"></span>
+            </div>
+
+            <div id="profile" class="card flex items-center flex-col-reverse md:flex-row-reverse flex-wrap p-4">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWLK_BQeCSM_kz5GhOUkDQXbTUmoIPvUJLRM-M9gCKEoHIX4A55k6GWjLmK199ErYcdmzZDggN_6zHGUy6eW0HnAee_GcAvwuQ8Leyxgv8"
+                    class="mx-1 size-16 rounded-full md:mx-5 xl:mx-10" />
+                <div class="flex flex-col items-center">
+                    <strong>Syarif Steady</strong>
+                    <span>Devscale Student</span>
                 </div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card col-span-2"></div>
-            </section>
+            </div>
 
-            <script src="dist/main.js"></script>
-        </main>
-    </div>
+            <!-- About Me -->
+            <div id="about" class="card p-6 flex flex-col h-auto border rounded-md">
+                <h2 class="text-zinc-900 font-bold mb-2">About Me</h2>
+                <p class="mb-2 md:max-xl:line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+                    alias cupiditate temporibus beatae hic, excepturi, vitae ad minima mollitia, ducimus nemo officiis
+                    distinctio iste eaque possimus. Ipsam minima accusantium incidunt.</p>
+                <p class="mb-4 md:max-xl:line-clamp-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                    harum maxime exercitationem maiores quod rerum. Repudiandae labore architecto magnam eligendi
+                    incidunt totam quo, repellendus sit dolor provident soluta. Qui, impedit!</p>
+                <div class="flex flex-col items-end mt-auto">
+                    <span class="text-lg ">find me at</span>
+                    <div class="flex gap-3">
+                        <div><img src="image/github.png" alt="github" class="h-6 w-6"></div>
+                        <div><img src="image/instagram.png" alt="instagram" class="h-6 w-6"></div>
+                        <div><img src="image/linkedin.png" alt="linkedin" class="h-6 w-6"></div>
+                        <div><img src="image/youtube.png" alt="youtube" class="h-6 w-6"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- image -->
+            <div class="card flex justify-center items-center p-2"><img
+                    src="https://i.pinimg.com/736x/b6/f3/40/b6f3405493223b0c980c8581414de7ad.jpg" alt="image"
+                    class="w-full h-auto object-cover rounded md:max-lg:aspect-2/3">
+            </div>
+            <!-- experiments -->
+            <div class="card p-4 flex flex-col gap-5">
+                <h2 class="text-zinc-900 font-bold">Experiments</h2>
+                <div class="card p-3">
+                    <h3 class="font-bold">Generated</h3>
+                    <span class="font-thin">Walpaper for mobile</span>
+                </div>
+                <div class="card p-3">
+                    <h3 class="font-bold">Generated</h3>
+                    <span class="font-thin">Walpaper for mobile</span>
+                </div>
+                <div class="card p-3">
+                    <h3 class="font-bold">Generated</h3>
+                    <span class="font-thin">Walpaper for mobile</span>
+                </div>
+            </div>
+            <!-- Companies -->
+            <div class="card flex flex-col items-center p-4">
+                <h3 class="text-zinc-900 font-bold mb-4">Companies Dream</h3>
+                <div class="flex flex-wrap content-center gap-5 lg:justify-center  xl:space-x-4 xl:p-3">
+                    <img src="image/nvidia.png" alt="nvidia" class="h-20 w-20">
+                    <img src="image/amd.png" alt="amd" class="h-20 w-20">
+                    <img src="image/intel.png" alt="intel" class="h-20 w-20">
+                    <img src="image/google.png" alt="google" class="h-20 w-20">
+                </div>
+            </div>
+            <!-- Contact -->
+            <div id="contact" class="card md:col-span-2 flex flex-col items-center justify-center p-4 ">
+                <h2 class="text-zinc-900 font-bold mb-4">Articles coming soon.</h2>
+                <form class="flex w-full max-w-md">
+                    <input type="email" placeholder="your@email.com"
+                        class="flex-grow px-4 py-2 rounded-l-md border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black" />
+                    <button type="submit"
+                        class="px-2 py-2 bg-gray-100 border border-gray-300 rounded-r-md hover:bg-gray-200 font-medium">
+                        Stay up to date
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="dist/main.js"></script>
 </body>
 
 </html>
