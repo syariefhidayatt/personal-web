@@ -48,10 +48,21 @@
                 <div class="flex flex-col items-end mt-auto">
                     <span class="text-lg ">Find Me At</span>
                     <div class="flex gap-3">
-                        <div><img src="image/github.png" alt="github" class="h-6 w-6 link"></div>
-                        <div><img src="image/instagram.png" alt="instagram" class="h-6 w-6 link"></div>
-                        <div><img src="image/linkedin.png" alt="linkedin" class="h-6 w-6 link"></div>
-                        <div><img src="image/youtube.png" alt="youtube" class="h-6 w-6 link"></div>
+                        <div><a href="https://github.com/syariefhidayatt">
+                                <img src="image/github.png" alt="github" class="h-6 w-6 link"></a>
+                        </div>
+                        <div><a href="https://www.instagram.com/">
+                                <img src="image/instagram.png" alt="instagram" class="h-6 w-6 link">
+                            </a>
+                        </div>
+                        <div><a href="https://www.linkedin.com/">
+                                <img src="image/linkedin.png" alt="linkedin" class="h-6 w-6 link">
+                            </a>
+                        </div>
+                        <div><a href="https://www.youtube.com/">
+                                <img src="image/youtube.png" alt="youtube" class="h-6 w-6 link">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -88,12 +99,13 @@
             </div>
             <!-- Contact -->
             <div id="contact" class="card md:col-span-2 flex flex-col items-center justify-center p-4 ">
-                <h2 class="text-zinc-900 font-bold mb-4">Projects Coming Soon.</h2>
-                <form class="flex w-full max-w-md">
-                    <input type="email" placeholder="your@email.com"
-                        class="flex-grow px-2 py-2 rounded-md border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black" />
+                <h2 class="text-zinc-900 font-bold mb-4">Partner Project Coming Soon.</h2>
+                <form action="https://formspree.io/f/mpwranpz" method="post" id="myForm" class="flex w-full max-w-md">
+                    <input type="email" name="message" id="email" placeholder="your@email.com"
+                        class="flex-grow px-2 py-2 rounded-md border border-zinc-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-black"
+                        required />
                     <button type="submit"
-                        class="px-2 py-2 rounded-l-md bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 font-medium">
+                        class="px-2 py-2 rounded-l-md bg-zinc-300 border border-zinc-900 rounded-md hover:bg-gray-400 font-medium">
                         Send Message
                     </button>
                 </form>
@@ -101,6 +113,7 @@
         </section>
     </main>
     <script src="dist/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
