@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="dist/global.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="flex justify-center items-center h-screen">
+        <main class="w-[768px]">
+            <header class="flex gap-4 justify-between p-4">
+                <div
+                    class="text-xl font-bold bg-gradient-to-r from-indigo-300 to-rose-200 bg-clip-text text-transparent">
+                    Steady.</div>
+                <nav class="flex gap-4">
+                    <div class="link">Instagram.</div>
+                    <div class="link">Github.</div>
+                    <div class="link">Twitter.</div>
+                    <div class="link">LinkedIn.</div>
+                </nav>
+            </header>
+
+            <section class="grid grid-cols-3 gap-4">
+                <div class="card space-y-4 col-span-2">
+                    <h2>Hello i am, <span id="greeting"></span></h2>
+                    <img src="https://www.indrazm.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.60384b27.jpg&w=828&q=75"
+                        class="w-16 h-16 rounded-lg" />
+                </div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card col-span-2"></div>
+            </section>
+
+            <script src="dist/main.js"></script>
+        </main>
+    </div>
+</body>
+
+</html>
