@@ -13,22 +13,21 @@
 
         <!-- header -->
         <header class="flex flex-col md:flex-row justify-between items-center py-4">
-            <div class="text-2xl font-bold">Steady</div>
+            <div class="text-4xl font-bold">Steady</div>
             <!-- navbar -->
-            <nav class="flex gap-4 mt-2 md:mt-0">
+            <nav class="flex gap-4 mt-2 md:mt-0 text-2xl">
                 <div class="link"><a href="#profile">Profile</a></div>
                 <div class="link"><a href="#about">About</a></div>
                 <div class="link"><a href="#contact">Contact</a></div>
             </nav>
         </header>
-
         <!-- content -->
         <section class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
             <div class="card text-4xl md:text-5xl xl:text-7xl col-span-1 md:col-span-2 p-4">
                 <span id="greeting"></span>
             </div>
-
-            <div id="profile" class="card flex items-center flex-col-reverse md:flex-row-reverse flex-wrap p-4">
+            <div id="profile"
+                class="card flex items-center flex-col-reverse md:flex-row-reverse flex-wrap p-4 text-2xl">
                 <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWLK_BQeCSM_kz5GhOUkDQXbTUmoIPvUJLRM-M9gCKEoHIX4A55k6GWjLmK199ErYcdmzZDggN_6zHGUy6eW0HnAee_GcAvwuQ8Leyxgv8"
                     class="mx-1 size-16 rounded-full md:mx-5 xl:mx-10" />
                 <div class="flex flex-col items-center">
@@ -36,9 +35,8 @@
                     <span>Devscale Student</span>
                 </div>
             </div>
-
             <!-- About Me -->
-            <div id="about" class="card p-6 flex flex-col h-auto border rounded-md">
+            <div id="about" class="card p-6 flex flex-col h-auto">
                 <h2 class="text-zinc-900 font-bold mb-2">About Me</h2>
                 <p class="mb-2 md:max-xl:line-clamp-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
                     alias cupiditate temporibus beatae hic, excepturi, vitae ad minima mollitia, ducimus nemo officiis
@@ -47,34 +45,34 @@
                     harum maxime exercitationem maiores quod rerum. Repudiandae labore architecto magnam eligendi
                     incidunt totam quo, repellendus sit dolor provident soluta. Qui, impedit!</p>
                 <div class="flex flex-col items-end mt-auto">
-                    <span class="text-lg ">find me at</span>
+                    <span class="text-lg ">Find Me At</span>
                     <div class="flex gap-3">
-                        <div><img src="image/github.png" alt="github" class="h-6 w-6"></div>
-                        <div><img src="image/instagram.png" alt="instagram" class="h-6 w-6"></div>
-                        <div><img src="image/linkedin.png" alt="linkedin" class="h-6 w-6"></div>
-                        <div><img src="image/youtube.png" alt="youtube" class="h-6 w-6"></div>
+                        <div><img src="image/github.png" alt="github" class="h-6 w-6 link"></div>
+                        <div><img src="image/instagram.png" alt="instagram" class="h-6 w-6 link"></div>
+                        <div><img src="image/linkedin.png" alt="linkedin" class="h-6 w-6 link"></div>
+                        <div><img src="image/youtube.png" alt="youtube" class="h-6 w-6 link"></div>
                     </div>
                 </div>
             </div>
             <!-- image -->
             <div class="card flex justify-center items-center p-2"><img
                     src="https://i.pinimg.com/736x/b6/f3/40/b6f3405493223b0c980c8581414de7ad.jpg" alt="image"
-                    class="w-full h-auto object-cover rounded md:max-lg:aspect-2/3">
+                    class="w-full h-auto object-cover rounded md:max-lg:aspect-2/4">
             </div>
             <!-- experiments -->
-            <div class="card p-4 flex flex-col gap-5">
+            <div class="card p-6 flex flex-col gap-10">
                 <h2 class="text-zinc-900 font-bold">Experiments</h2>
                 <div class="card p-3">
-                    <h3 class="font-bold">Generated</h3>
-                    <span class="font-thin">Walpaper for mobile</span>
+                    <h3 class="font-bold">Build Website E-Commerce</h3>
+                    <span class="font-thin">Middle Vape Store</span>
                 </div>
                 <div class="card p-3">
-                    <h3 class="font-bold">Generated</h3>
-                    <span class="font-thin">Walpaper for mobile</span>
+                    <h3 class="font-bold">Build Website Entertaint</h3>
+                    <span class="font-thin">Movie & Music Video</span>
                 </div>
                 <div class="card p-3">
-                    <h3 class="font-bold">Generated</h3>
-                    <span class="font-thin">Walpaper for mobile</span>
+                    <h3 class="font-bold">Build Website Mading</h3>
+                    <span class="font-thin">Mading For Campus</span>
                 </div>
             </div>
             <!-- Companies -->
@@ -89,13 +87,13 @@
             </div>
             <!-- Contact -->
             <div id="contact" class="card md:col-span-2 flex flex-col items-center justify-center p-4 ">
-                <h2 class="text-zinc-900 font-bold mb-4">Articles coming soon.</h2>
+                <h2 class="text-zinc-900 font-bold mb-4">Projects Coming Soon.</h2>
                 <form class="flex w-full max-w-md">
                     <input type="email" placeholder="your@email.com"
-                        class="flex-grow px-4 py-2 rounded-l-md border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black" />
+                        class="flex-grow px-2 py-2 rounded-md border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black" />
                     <button type="submit"
-                        class="px-2 py-2 bg-gray-100 border border-gray-300 rounded-r-md hover:bg-gray-200 font-medium">
-                        Stay up to date
+                        class="px-2 py-2 rounded-l-md bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 font-medium">
+                        Send Message
                     </button>
                 </form>
             </div>
