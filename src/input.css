@@ -24,6 +24,9 @@
 }
 
 @layer components {
+  .icons{
+    @apply grayscale-100 hover:grayscale-0 transition duration-300;
+  }
   .link {
     @apply text-zinc-400 hover:text-zinc-900 cursor-pointer;
   }
